@@ -6,7 +6,7 @@ import HomePage from "@/view/homepage.jsx";
 
 function App() {
 	return (
-		<div className="h-screen flex flex-col px-80">
+		<div className="h-screen flex flex-col">
 			<Header />
 			<main className="flex-1">
 				<Routes>

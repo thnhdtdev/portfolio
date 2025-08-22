@@ -13,8 +13,10 @@ const Header = () => {
 	const [theme, setTheme] = useState("dark");
 
 	return (
-		<nav className="flex items-center justify-between py-10">
-			<div className="font-bold text-2xl text-blue-500 tracking-wide select-none">DATDEV</div>
+		<nav className="flex items-center justify-between py-10 px-80">
+			<div className="font-bold text-2xl text-blue-500 tracking-wide select-none uppercase">
+				thnhdtdev
+			</div>
 
 			<div className="flex items-center gap-8">
 				<ul className="flex space-x-8 font-semibold">
