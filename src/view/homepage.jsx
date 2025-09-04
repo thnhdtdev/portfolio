@@ -1,30 +1,25 @@
 import { Button } from "@/components/ui/button.jsx";
-import LightRays from "@/components/LightRays.jsx";
+import Squares from "@/components/Squares.jsx";
 
 const HomePage = () => (
 	<div className="relative w-full h-screen bg-[#020817] flex justify-center items-center overflow-hidden">
 		<div className="absolute inset-0 z-0">
-			<LightRays
-				raysOrigin="top-center"
-				raysColor="#00ffff"
-				raysSpeed={1.5}
-				lightSpread={0.8}
-				rayLength={1.2}
-				followMouse={true}
-				mouseInfluence={0.1}
-				noiseAmount={0.1}
-				distortion={0.05}
-				className="custom-rays w-full h-full"
+			<Squares
+				speed={0.25}
+				squareSize={40}
+				direction="diagonal" // up, down, left, right, diagonal
+				borderColor="#271E37"
+				hoverFillColor="#222222"
 			/>
 		</div>
 
 		<div className="relative z-10 w-full max-w-6xl px-8">
-			<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+			<div className="grid grid-cols-1 md:grid-cols-2 items-center">
 				<div className="flex flex-col justify-center items-start gap-4">
 					<div className="text-blue-400 font-bold text-lg">Hi! I'm</div>
 					<div className="text-5xl font-bold uppercase underline">thanhdat</div>
 					<div className="text-xl md:text-2xl text-white font-light mt-2">
-						Frontend Developer & Software Engineering Student
+						Frontend Developer & Software Engineering
 					</div>
 					<div className="text-white mt-2">
 						Building elegant solutions to complex problems with modern technologies.

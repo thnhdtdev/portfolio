@@ -1,7 +1,7 @@
 import { useEffect } from "react";
+import Lottie from "lottie-react";
 
 import helloAnimation from "@/assets/splashScreen/Hello.json";
-import Lottie from "lottie-react";
 
 const SplashScreen = ({ onDone }) => {
 	useEffect(() => {
