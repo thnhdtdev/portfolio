@@ -13,9 +13,9 @@ const Header = () => {
 	const [theme, setTheme] = useState("dark");
 
 	return (
-		<nav className="flex items-center justify-between py-10 px-80">
+		<nav className="flex items-center justify-between py-8 px-80 bg-[#020817]">
 			<div className="font-bold text-2xl text-blue-500 tracking-wide select-none uppercase">
-				thnhdtdev
+				thanhdat
 			</div>
 
 			<div className="flex items-center gap-8">
