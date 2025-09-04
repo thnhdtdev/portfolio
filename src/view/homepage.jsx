@@ -28,9 +28,9 @@ const HomePage = () => (
 						<Button
 							variant="secondary"
 							size="lg"
-							className="bg-blue-500 text-white rounded-3xl transition-all duration-200 hover:bg-blue-600 hover:shadow-lg"
+							className="bg-blue-500 text-white rounded-3xl transition-all duration-200 hover:bg-blue-600 hover:shadow-lg capitalize"
 						>
-							Contacts
+							Contacts me
 						</Button>
 						<Button
 							variant="ghost"
@@ -39,7 +39,7 @@ const HomePage = () => (
 						>
 							View Projects
 						</Button>
-						<div>btn2</div>
+						<div>icon</div>
 						<div>icon</div>
 						<div>icon</div>
 					</div>
