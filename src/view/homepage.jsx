@@ -4,10 +4,26 @@ import Squares from "@/components/Squares.jsx";
 import SplitText from "@/components/SplitText.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import BlurText from "@/components/BlurText.jsx";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const HomePage = () => {
-	const [showName, setShowName] = useState(false);
-	const [showHi, setShowHi] = useState(true);
+	const socials = [
+		{
+			icon: <Github />,
+			url: "https://github.com/thnhdtdev",
+			label: "Github"
+		},
+		{
+			icon: <Linkedin />,
+			url: "https://www.linkedin.com/in/v%C3%B5-th%C3%A0nh-%C4%91%E1%BA%A1t-b5251a2b7/",
+			label: "Linkedin"
+		},
+		{
+			icon: <Mail />,
+			url: "mailto:vodat0301@gmail.com",
+			label: "Mail"
+		}
+	];
 
 	return (
 		<div className="relative w-full h-screen bg-[#020817] flex justify-center items-center overflow-hidden">
@@ -67,12 +83,73 @@ const HomePage = () => {
 							>
 								View Projects
 							</Button>
-							<div>icon</div>
-							<div>icon</div>
-							<div>icon</div>
+							{socials.map((item) => (
+								<a
+									key={item.label}
+									href={item.url}
+									className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition"
+								>
+									{item.icon}
+								</a>
+							))}
 						</div>
 					</div>
-					<div className="flex justify-center items-center w-full h-full">hehe</div>
+					<div className="flex justify-center items-center w-full h-full">
+						<div className="border border-white rounded-3xl w-full h-full max-w-xs bg-gray-950 p-6">
+							<div className="flex justify-between items-center mb-4">
+								<div className="flex gap-2">
+									<div className="w-3 h-3 bg-red-500 rounded-full" />
+									<div className="w-3 h-3 bg-yellow-400 rounded-full" />
+									<div className="w-3 h-3 bg-green-500 rounded-full" />
+								</div>
+								<div className="text-sm text-gray-400 pr-2 font-mono">
+									developer.js
+								</div>
+							</div>
+							<div className="font-mono space-y-2 text-sm">
+								<div className="text-gray-500">
+									//Frontend Developer & Software Engineer
+								</div>
+								<div className="flex flex-col gap-2 text-gray-400">
+									<div>
+										const&nbsp;
+										<span className="text-blue-400">developer</span>
+										&nbsp;=&nbsp;
+										<span className="text-orange-400">&#123;</span>
+									</div>
+									<div>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>name:</span>&nbsp;
+										<span className="text-green-400">'Thanhdat'</span>
+									</div>
+									<div>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>skills:</span>&nbsp;
+										<span className="text-green-400">[TailwindCSS,...]</span>
+										,
+										<br />
+									</div>
+									<div>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>framework:</span>&nbsp;
+										<span className="text-green-400">[React, Vite]</span>,
+									</div>
+									<div>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>tools:</span>&nbsp;
+										<span className="text-green-400">[Git, Figma]</span>
+									</div>
+									<div>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>learing:</span>&nbsp;
+										<span className="text-green-400">'Always'</span>
+									</div>
+
+									<span className="text-orange-400">&#125;</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
