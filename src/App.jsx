@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
+import HomePage from "@/view/homepage.jsx";
 import Header from "@/components/layout/header.jsx";
 import Footer from "@/components/layout/footer.jsx";
-import HomePage from "@/view/homepage.jsx";
+import SplashScreen from "@/components/layout/SplashScreen.jsx";
 
 function App() {
-	return (
+	const [splashDone, setSplashDone] = useState(false);
+
+	return splashDone ? (
 		<div className="h-screen flex flex-col">
 			<Header />
 			<main className="flex-1">
@@ -15,6 +19,8 @@ function App() {
 			</main>
 			<Footer />
 		</div>
+	) : (
+		<SplashScreen onDone={() => setSplashDone(true)} />
 	);
 }
 
