@@ -24,7 +24,7 @@ const Footer = () => {
 			<div className="flex flex-col md:flex-row justify-between items-center h-full gap-8">
 				<div className="text-center md:text-left">
 					<h1 className="font-bold text-2xl text-blue-500 tracking-wide select-none uppercase">
-						thnhdtdev
+						thanhdat
 					</h1>
 					<p className="max-w-md text-sm text-gray-300">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry...
