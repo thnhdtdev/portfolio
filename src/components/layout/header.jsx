@@ -13,7 +13,7 @@ const Header = () => {
 	const [theme, setTheme] = useState("dark");
 
 	return (
-		<nav className="flex items-center justify-between py-8 px-80 bg-[#020817]">
+		<nav className="flex items-center justify-between py-8 px-80 bg-[#020817] fixed top-0 left-0 right-0 z-50">
 			<div className="font-bold text-2xl text-blue-500 tracking-wide select-none uppercase">
 				thanhdat
 			</div>
