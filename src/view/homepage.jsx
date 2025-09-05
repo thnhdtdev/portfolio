@@ -1,6 +1,7 @@
 import Squares from "@/components/Squares.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Section_logo_loop from "@/components/layout/section_logo_loop.jsx";
 import AnimatedContent from "@/components/AnimatedContent.jsx";
 
 const HomePage = () => {
@@ -171,7 +172,9 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="text-red-500 h-96 bg-gray-950">hehe</div>
+			<div className=" bg-gray-950">
+				<Section_logo_loop />
+			</div>
 		</div>
 	);
 };

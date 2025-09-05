@@ -20,7 +20,7 @@ const socials = [
 
 const Footer = () => {
 	return (
-		<div className="px-4 md:px-20 lg:px-80 py-20 h-44 bg-[#0b1523]">
+		<div className="px-4 md:px-20 lg:px-80 py-20 h-44 bg-gray-950">
 			<div className="flex flex-col md:flex-row justify-between items-center h-full gap-8">
 				<div className="text-center md:text-left">
 					<h1 className="font-bold text-2xl text-blue-500 tracking-wide select-none uppercase">
