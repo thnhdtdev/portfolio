@@ -102,7 +102,7 @@ const HomePage = () => {
 							threshold={0.2}
 							delay={0.3}
 						>
-							<div className="flex justify-center items-center w-full h-full">
+							<div className="flex justify-center items-center w-full h-full hover:rotate-3 hover:-translate-y-4 transition-transform duration-500">
 								<div className="border border-white rounded-3xl w-full h-full max-w-xs bg-gray-950 p-6">
 									<div className="flex justify-between items-center mb-4">
 										<div className="flex gap-2">
