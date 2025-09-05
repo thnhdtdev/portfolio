@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 
 import { Button } from "@/components/ui/button.jsx";
@@ -11,9 +11,20 @@ import {
 
 const Header = () => {
 	const [theme, setTheme] = useState("dark");
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const onScroll = () => {
+			setScrolled(window.scrollY > 50);
+		};
+		window.addEventListener("scroll", onScroll);
+		return () => window.removeEventListener("scroll", onScroll);
+	}, []);
 
 	return (
-		<nav className="flex items-center justify-between py-8 px-80  fixed top-0 left-0 right-0 z-50">
+		<nav
+			className={`flex items-center justify-between py-8 px-80  fixed top-0 left-0 right-0 z-50 ${scrolled ? "bg-gray-950 shadow-lg" : "bg-transparent"}`}
+		>
 			<div className="font-bold text-2xl text-blue-500 tracking-wide select-none uppercase">
 				thanhdat
 			</div>
