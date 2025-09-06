@@ -1,6 +1,7 @@
 import Squares from "@/components/Squares.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Section_logo_loop from "@/components/layout/section_logo_loop.jsx";
 import AnimatedContent from "@/components/AnimatedContent.jsx";
 
 const HomePage = () => {
@@ -101,7 +102,7 @@ const HomePage = () => {
 							threshold={0.2}
 							delay={0.3}
 						>
-							<div className="flex justify-center items-center w-full h-full">
+							<div className="flex justify-center items-center w-full h-full hover:rotate-3 hover:-translate-y-4 transition-transform duration-500">
 								<div className="border border-white rounded-3xl w-full h-full max-w-xs bg-gray-950 p-6">
 									<div className="flex justify-between items-center mb-4">
 										<div className="flex gap-2">
@@ -171,7 +172,9 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="text-red-500 h-96 bg-gray-950">hehe</div>
+			<div className=" bg-gray-950">
+				<Section_logo_loop />
+			</div>
 		</div>
 	);
 };
