@@ -1,7 +1,12 @@
+import { IoDocumentText } from "react-icons/io5";
+
 const BioCard = () => {
 	return (
 		<div className="flex flex-col gap-4 mb-4">
-			<div className="text-xl font-semibold">Bio</div>
+			<div className="text-xl font-semibold flex gap-1 items-center">
+				<IoDocumentText className="text-blue-500 w-6 h-6" />
+				Bio
+			</div>
 			<div className="text-muted-foreground">
 				Frontend developer specializing in ReactJS. I focus on building responsive,
 				high-performance web applications with modern UI/UX.
