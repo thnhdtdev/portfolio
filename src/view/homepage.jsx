@@ -1,8 +1,10 @@
+import { Github, Linkedin, Mail } from "lucide-react";
+
 import Squares from "@/components/Squares.jsx";
 import { Button } from "@/components/ui/button.jsx";
-import { Github, Linkedin, Mail } from "lucide-react";
-import Section_logo_loop from "@/components/layout/section_logo_loop.jsx";
 import AnimatedContent from "@/components/AnimatedContent.jsx";
+import AboutSection from "@/components/sections/about_section.jsx";
+import SectionLogoLoop from "@/components/layout/section_logo_loop.jsx";
 
 const HomePage = () => {
 	const socials = [
@@ -172,8 +174,13 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
+
+			{/*About me*/}
+			<AboutSection />
+
+			{/*Logo Loop*/}
 			<div className=" bg-gray-950">
-				<Section_logo_loop />
+				<SectionLogoLoop />
 			</div>
 		</div>
 	);

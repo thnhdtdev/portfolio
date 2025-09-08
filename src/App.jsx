@@ -10,7 +10,7 @@ function App() {
 	const [splashDone, setSplashDone] = useState(false);
 
 	return splashDone ? (
-		<div className="h-screen flex flex-col">
+		<div className="h-screen flex flex-col ">
 			<Header />
 			<main className="flex-1">
 				<Routes>
