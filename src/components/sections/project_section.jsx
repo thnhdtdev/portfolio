@@ -1,8 +1,5 @@
 import FadeInSection from "@/components/elements/fade_in_section.jsx";
-import BioCard from "@/components/elements/bio_card.jsx";
-import EducationCard from "@/components/elements/education_card.jsx";
-import ExperienceCard from "@/components/elements/experience_card.jsx";
-import Information from "@/components/elements/information.jsx";
+import ProjectCard from "@/components/elements/project_card.jsx";
 
 const ProjectSection = () => {
 	return (
@@ -16,21 +13,15 @@ const ProjectSection = () => {
 
 			<div className="flex flex-col gap-8 md:flex-row md:justify-between md:items-start">
 				<div className="flex-1">
-					<FadeInSection delay={0.15}>
-						<BioCard />
+					<FadeInSection delay={0.15} className="text-muted-foreground">
+						Here are some of the projects I've worked on, showcasing my skills in
+						various technologies and problem domains.{" "}
 					</FadeInSection>
-					<div className="flex gap-4 mt-4">
-						<FadeInSection delay={0.25}>
-							<EducationCard />
-						</FadeInSection>
-						<FadeInSection delay={0.35}>
-							<ExperienceCard />
-						</FadeInSection>
-					</div>
+
+					<FadeInSection delay={0.25} className="my-3">
+						<ProjectCard />
+					</FadeInSection>
 				</div>
-				<FadeInSection delay={0.45}>
-					<Information />
-				</FadeInSection>
 			</div>
 		</div>
 	);

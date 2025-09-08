@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const FadeInSection = ({ children, delay = 0 }) => {
+const FadeInSection = ({ children, delay = 0, className }) => {
 	const { ref, inView } = useInView();
 
 	return (
-		<div>
+		<div className={className}>
 			<motion.div
 				ref={ref}
 				initial={{ opacity: 0, y: 20 }}
