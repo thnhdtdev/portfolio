@@ -42,42 +42,34 @@ const ProjectCard = () => {
 	return (
 		<div className="flex flex-col justify-center items-center gap-8">
 			<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
-				{visibleProjects.map((item) => {
-					return (
-						<div className="border mx-2 border-primary rounded-md hover:-translate-y-1 transition cursor-pointer duration-500">
-							<div>
-								<img
-									src={item?.image}
-									alt=""
-									className="h-48 w-96 object-cover rounded-t-md "
-								/>
-								<div className="flex flex-col flex-grow p-6 gap-6 justify-center items-start">
-									<div className="font-bold line-clamp-2 min-h-10">
-										{item?.title}
-									</div>
-									<div className="text-muted-foreground text-sm line-clamp-3">
-										{item?.description}
-									</div>
-									<div className="flex gap-1">
-										{item?.badge?.map((badge, idx) => (
-											<Badge variant="default" key={idx}>
-												{badge}
-											</Badge>
-										))}
-									</div>
-									<Button
-										variant="ghost"
-										size="sm"
-										className="border border-primary"
-									>
-										<FaGithub />
-										Github
-									</Button>
+				{visibleProjects.map((item) => (
+					<div className="border mx-2 border-primary rounded-md hover:-translate-y-1 transition cursor-pointer duration-500">
+						<div>
+							<img
+								src={item?.image}
+								alt=""
+								className="h-48 w-96 object-cover rounded-t-md "
+							/>
+							<div className="flex flex-col flex-grow p-6 gap-6 justify-center items-start">
+								<div className="font-bold line-clamp-2 min-h-10">{item?.title}</div>
+								<div className="text-muted-foreground text-sm line-clamp-3">
+									{item?.description}
 								</div>
+								<div className="flex gap-1">
+									{item?.badge?.map((badge, idx) => (
+										<Badge variant="default" key={idx}>
+											{badge}
+										</Badge>
+									))}
+								</div>
+								<Button variant="ghost" size="sm" className="border border-primary">
+									<FaGithub />
+									Github
+								</Button>
 							</div>
 						</div>
-					);
-				})}
+					</div>
+				))}
 			</div>
 
 			{projects.length > 3 && (
