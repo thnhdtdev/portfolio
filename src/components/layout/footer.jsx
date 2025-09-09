@@ -1,22 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
-
-const socials = [
-	{
-		icon: <Github />,
-		url: "https://github.com/thnhdtdev",
-		label: "Github"
-	},
-	{
-		icon: <Linkedin />,
-		url: "https://www.linkedin.com/in/v%C3%B5-th%C3%A0nh-%C4%91%E1%BA%A1t-b5251a2b7/",
-		label: "Linkedin"
-	},
-	{
-		icon: <Mail />,
-		url: "mailto:vodat0301@gmail.com",
-		label: "Mail"
-	}
-];
+import Socials from "@/const/socials.jsx";
 
 const Footer = () => {
 	return (
@@ -33,11 +15,11 @@ const Footer = () => {
 
 				<div className="flex flex-col gap-4 md:items-end">
 					<div className="flex items-center gap-6 justify-center">
-						{socials.map((item) => (
+						{Socials.map((item) => (
 							<a
 								key={item.label}
 								href={item.url}
-								className="hover:text-blue-500 transition-colors"
+								className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition text-2xl"
 							>
 								{item.icon}
 							</a>

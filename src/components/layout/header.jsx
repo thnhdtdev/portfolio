@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Moon, Sun } from "lucide-react";
+import { FaRegMoon } from "react-icons/fa";
+import { MdOutlineWbSunny } from "react-icons/md";
 
 import { Button } from "@/components/ui/button.jsx";
 import {
@@ -66,8 +67,8 @@ const Header = () => {
 				<DropdownMenu>
 					<DropdownMenuTrigger asChild>
 						<Button variant="ghost" size="icon">
-							{theme === "light" && <Sun />}
-							{theme === "dark" && <Moon />}
+							{theme === "light" && <MdOutlineWbSunny />}
+							{theme === "dark" && <FaRegMoon />}
 						</Button>
 					</DropdownMenuTrigger>
 					<DropdownMenuContent align="end" className="w-40 cursor-pointer bg-[#020817]">
@@ -75,14 +76,14 @@ const Header = () => {
 							onClick={() => setTheme("light")}
 							className={theme === "light" ? "bg-blue-600 text-white" : "text-white"}
 						>
-							<Sun />
+							<MdOutlineWbSunny />
 							Light
 						</DropdownMenuItem>
 						<DropdownMenuItem
 							onClick={() => setTheme("dark")}
 							className={theme === "dark" ? "bg-blue-600 text-white" : "text-white"}
 						>
-							<Moon />
+							<FaRegMoon />
 							Dark
 						</DropdownMenuItem>
 					</DropdownMenuContent>
