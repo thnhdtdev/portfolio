@@ -5,6 +5,7 @@ import AnimatedContent from "@/components/AnimatedContent.jsx";
 import AboutSection from "@/components/sections/about_section.jsx";
 import ProjectSection from "@/components/sections/project_section.jsx";
 import SectionLogoLoop from "@/components/layout/section_logo_loop.jsx";
+import SkillsSection from "@/components/sections/skills_section.jsx";
 
 const HomePage = () => {
 	return (
@@ -161,6 +162,8 @@ const HomePage = () => {
 			<AboutSection />
 
 			<ProjectSection />
+
+			<SkillsSection />
 
 			{/*Logo Loop*/}
 			<div className=" bg-gray-950">
