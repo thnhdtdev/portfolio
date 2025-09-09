@@ -28,13 +28,21 @@ const ProjectCard = () => {
 			badge: ["Python", "Scrapy", "MongoDB"],
 			description:
 				"A React Native and Firebase app for managing internships and applications, helping students find relevant opportunities."
+		},
+		{
+			image: "https://picsum.photos/128/128",
+			title: "Internship Finder - ProIntern",
+			badge: ["Python", "Scrapy", "MongoDB"],
+			description:
+				"A React Native and Firebase app for managing internships and applications, helping students find relevant opportunities."
 		}
 	];
+	const visibleProjects = showMore ? projects : projects.slice(0, 3);
 
 	return (
 		<div className="flex flex-col justify-center items-center gap-8">
 			<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
-				{projects.map((item) => {
+				{visibleProjects.map((item) => {
 					return (
 						<div className="border mx-2 border-primary rounded-md hover:-translate-y-1 transition cursor-pointer duration-500">
 							<div>
@@ -72,15 +80,17 @@ const ProjectCard = () => {
 				})}
 			</div>
 
-			<Button
-				variant="ghost"
-				size="lg"
-				className="border border-white rounded-3xl text-white capitalize "
-				onClick={() => setShowMore(!showMore)}
-			>
-				{showMore ? "Show Less" : "Show More Projects"}
-				<IoCode />
-			</Button>
+			{projects.length > 3 && (
+				<Button
+					variant="ghost"
+					size="lg"
+					className="border border-white rounded1-3xl text-white capitalize "
+					onClick={() => setShowMore((prev) => !prev)}
+				>
+					{showMore ? "Show Less" : "Show More Projects"}
+					<IoCode />
+				</Button>
+			)}
 		</div>
 	);
 };
