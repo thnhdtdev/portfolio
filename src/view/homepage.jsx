@@ -1,5 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
-
+import Socials from "@/const/socials.jsx";
 import Squares from "@/components/Squares.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import AnimatedContent from "@/components/AnimatedContent.jsx";
@@ -7,24 +6,6 @@ import AboutSection from "@/components/sections/about_section.jsx";
 import SectionLogoLoop from "@/components/layout/section_logo_loop.jsx";
 
 const HomePage = () => {
-	const socials = [
-		{
-			icon: <Github />,
-			url: "https://github.com/thnhdtdev",
-			label: "Github"
-		},
-		{
-			icon: <Linkedin />,
-			url: "https://www.linkedin.com/in/v%C3%B5-th%C3%A0nh-%C4%91%E1%BA%A1t-b5251a2b7/",
-			label: "Linkedin"
-		},
-		{
-			icon: <Mail />,
-			url: "mailto:vodat0301@gmail.com",
-			label: "Mail"
-		}
-	];
-
 	return (
 		<div>
 			<div className="relative w-full h-screen bg-[#020817] flex justify-center items-center">
@@ -79,11 +60,11 @@ const HomePage = () => {
 									>
 										View Projects
 									</Button>
-									{socials.map((item) => (
+									{Socials.map((item) => (
 										<a
 											key={item.label}
 											href={item.url}
-											className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition"
+											className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition text-2xl"
 										>
 											{item.icon}
 										</a>
