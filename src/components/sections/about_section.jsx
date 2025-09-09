@@ -8,7 +8,10 @@ const AboutSection = () => {
 	return (
 		<div className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-8">
 			<FadeInSection>
-				<div className="mb-12 text-3xl font-bold">About me</div>
+				<div className="mb-12 text-3xl font-bold flex gap-2">
+					<div className="underline decoration-blue-700">About</div>
+					<div>me</div>
+				</div>
 			</FadeInSection>
 			<div className="flex flex-col gap-8 md:flex-row md:justify-between md:items-start">
 				<div className="flex-1">

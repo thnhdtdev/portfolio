@@ -3,6 +3,7 @@ import Squares from "@/components/Squares.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import AnimatedContent from "@/components/AnimatedContent.jsx";
 import AboutSection from "@/components/sections/about_section.jsx";
+import ProjectSection from "@/components/sections/project_section.jsx";
 import SectionLogoLoop from "@/components/layout/section_logo_loop.jsx";
 
 const HomePage = () => {
@@ -158,6 +159,8 @@ const HomePage = () => {
 
 			{/*About me*/}
 			<AboutSection />
+
+			<ProjectSection />
 
 			{/*Logo Loop*/}
 			<div className=" bg-gray-950">
