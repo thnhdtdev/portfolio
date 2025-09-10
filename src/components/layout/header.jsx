@@ -54,11 +54,6 @@ const Header = () => {
 					</li>
 					<li>
 						<a href="#" className="hover:text-blue-400 transition">
-							Achievements
-						</a>
-					</li>
-					<li>
-						<a href="#" className="hover:text-blue-400 transition">
 							Contact
 						</a>
 					</li>
