@@ -1,8 +1,9 @@
 import { FiPhone } from "react-icons/fi";
-import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { MdOutlineLocationOn } from "react-icons/md";
 
 import FadeInSection from "@/components/elements/fade_in_section.jsx";
+import ContactForm from "@/components/elements/contact_form.jsx";
 
 const ContactItem = ({ icon, label, value }) => {
 	return (
@@ -28,7 +29,7 @@ const ContactList = [
 		value: "0964983202"
 	},
 	{
-		icon: <FaLocationDot className="text-blue-700 w-6 h-6" />,
+		icon: <MdOutlineLocationOn className="text-blue-700 w-6 h-6" />,
 		label: "location",
 		value: "Go Vap, HCM City, Vietnam"
 	}
@@ -67,7 +68,9 @@ const ContactMe = () => {
 									</div>
 								</div>
 							</div>
-							<div>b</div>
+							<div>
+								<ContactForm />
+							</div>
 						</div>
 					</FadeInSection>
 				</div>
