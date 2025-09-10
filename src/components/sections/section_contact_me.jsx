@@ -4,6 +4,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 import FadeInSection from "@/components/elements/fade_in_section.jsx";
 import ContactForm from "@/components/elements/contact_form.jsx";
+import Socials from "@/const/socials.jsx";
 
 const ContactItem = ({ icon, label, value }) => {
 	return (
@@ -67,12 +68,31 @@ const ContactMe = () => {
 										))}
 									</div>
 								</div>
+
+								<div>
+									<div className="font-semibold capitalize mt-6">
+										Connect with me
+									</div>
+									<div className="flex gap-4 mt-2">
+										{Socials.map((item) => (
+											<a
+												key={item.label}
+												href={item.url}
+												className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition text-2xl"
+											>
+												{item.icon}
+											</a>
+										))}
+									</div>
+								</div>
+								<div></div>
 							</div>
 							<div className="col-span-2">
 								<ContactForm />
 							</div>
 						</div>
 					</FadeInSection>
+					<FadeInSection delay={0.25} className="my-3"></FadeInSection>
 				</div>
 			</div>
 		</div>
