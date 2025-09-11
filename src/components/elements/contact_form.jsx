@@ -1,20 +1,36 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { FormProvider, useForm } from "react-hook-form";
 
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input.jsx";
-import { Textarea } from "@/components/ui/textarea.jsx";
 import { Button } from "@/components/ui/button.jsx";
+import { Textarea } from "@/components/ui/textarea.jsx";
 
 const ContactForm = () => {
 	const methods = useForm();
+	const formRef = useRef();
 
-	const onSubmit = (data) => {
-		console.log(data);
-		methods.reset();
+	const onSubmit = async () => {
+		try {
+			await emailjs.sendForm(
+				"service_h3dr9b9",
+				"template_10nj2ao",
+				formRef.current,
+				"LYn4Unay6aiHNybAq"
+			);
+
+			alert("Message sent!");
+			methods.reset();
+		} catch (error) {
+			alert("Failed to send message!");
+			console.log(error);
+		}
 	};
+
 	return (
 		<FormProvider {...methods}>
-			<form onSubmit={methods.handleSubmit(onSubmit)}>
+			<form ref={formRef} onSubmit={methods.handleSubmit(onSubmit)}>
 				<div className="border border-primary p-6 rounded-lg flex flex-col gap-4">
 					<div className="grid grid-cols-2 gap-4">
 						<div>
