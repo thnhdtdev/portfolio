@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button.jsx";
 import { TbDownload } from "react-icons/tb";
+import { Badge } from "@/components/ui/badge.jsx";
 
 const Information = () => {
 	const skills = ["react", "tailwind css", "git", "jira"];
@@ -18,13 +19,11 @@ const Information = () => {
 				</div>
 			</div>
 			<div className="flex gap-4">
-				{skills.map((item) => {
-					return (
-						<div className="border-2 border-gray-900 rounded-full px-2.5 py-0.5 text-xs font-semibold capitalize bg-gray-900">
-							{item}
-						</div>
-					);
-				})}
+				{skills.map((item, index) => (
+					<Badge variant="default" key={index} className="capitalize">
+						{item}
+					</Badge>
+				))}
 			</div>
 			<Button
 				variant="secondary"

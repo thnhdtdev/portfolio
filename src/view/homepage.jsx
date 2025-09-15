@@ -6,6 +6,7 @@ import AboutSection from "@/components/sections/about_section.jsx";
 import ProjectSection from "@/components/sections/project_section.jsx";
 import SectionLogoLoop from "@/components/layout/section_logo_loop.jsx";
 import SkillsSection from "@/components/sections/skills_section.jsx";
+import ContactMe from "@/components/sections/section_contact_me.jsx";
 
 const HomePage = () => {
 	return (
@@ -166,9 +167,11 @@ const HomePage = () => {
 			<SkillsSection />
 
 			{/*Logo Loop*/}
-			<div className=" bg-gray-950">
+			<div className="bg-gray-950">
 				<SectionLogoLoop />
 			</div>
+
+			<ContactMe />
 		</div>
 	);
 };
