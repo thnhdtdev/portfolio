@@ -33,27 +33,27 @@ const Header = () => {
 			<div className="flex items-center gap-8">
 				<ul className="flex space-x-8 font-semibold">
 					<li>
-						<a href="#" className="hover:text-blue-400 transition">
+						<a href="#home" className="hover:text-blue-400 transition">
 							Home
 						</a>
 					</li>
 					<li>
-						<a href="#" className="hover:text-blue-400 transition">
+						<a href="#about" className="hover:text-blue-400 transition">
 							About
 						</a>
 					</li>
 					<li>
-						<a href="#" className="hover:text-blue-400 transition">
+						<a href="#projects" className="hover:text-blue-400 transition">
 							Projects
 						</a>
 					</li>
 					<li>
-						<a href="#" className="hover:text-blue-400 transition">
+						<a href="#skills" className="hover:text-blue-400 transition">
 							Skills
 						</a>
 					</li>
 					<li>
-						<a href="#" className="hover:text-blue-400 transition">
+						<a href="#contact" className="hover:text-blue-400 transition">
 							Contact
 						</a>
 					</li>

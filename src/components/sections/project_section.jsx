@@ -1,9 +1,9 @@
 import FadeInSection from "@/components/elements/fade_in_section.jsx";
 import ProjectCard from "@/components/elements/project_card.jsx";
 
-const ProjectSection = () => {
+const ProjectSection = ({ id }) => {
 	return (
-		<div className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-8">
+		<div id={id} className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-8">
 			<FadeInSection>
 				<div className="mb-12 text-3xl font-bold flex">
 					<div className="underline decoration-blue-700">Pro</div>
