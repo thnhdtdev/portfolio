@@ -1,12 +1,85 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern personal portfolio to showcase my profile, skills, and projects – built to impress recruiters and employers.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Screenshots
 
-## Expanding the ESLint configuration
+### 1. Homepage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Homepage](./src/assets/img/28beaed9-191e-4fdb-af1a-228e5e13e47b.png)
+
+---
+
+### 2. About Me
+
+![About Me](./src/assets/img/f55d8f38-b17a-4865-a034-5d9059dfad60.png)
+
+---
+
+### 3. Projects
+
+![Projects](./src/assets/img/850877f2-6b29-41e1-96ec-d1a8e6a24d10.png)
+
+---
+
+### 4. Skills
+
+![Skills](./src/assets/img/286fc29d-c17e-40e0-a769-63a6491709c4.png)
+
+---
+
+### 5. Contact Me
+
+![Contact Me](./src/assets/img/df4c5a09-4efb-44c4-a322-1f65f00484da.png)
+
+---
+
+## 🚀 Demo
+
+<!-- Add your deploy link here when ready -->
+[Live Demo](https://portfolio-ruddy-omega-17.vercel.app/)
+
+---
+
+## ✨ Features
+
+- ⚡️ **Animated Scroll Effects** (Framer Motion)
+- 🌗 **Dark Mode**
+- 📱 **Responsive Design**
+- 🗂️ **Project & Skills Showcase**
+- ✉️ **Contact Section** (email integration)
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Shadcn UI](https://ui.shadcn.com/)
+
+---
+
+## 🧑‍💻 Author
+
+**Vo Thanh Dat**
+
+- Email: [vodat0301@gmail.com](mailto:vodat0301@gmail.com)
+
+---
+
+## 📦 Getting Started
+
+```bash
+# Clone this repo
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
