@@ -75,8 +75,8 @@
 
 ```bash
 # Clone this repo
-git clone https://github.com/your-username/your-portfolio.git
-cd your-portfolio
+git clone https://github.com/thnhdtdev/portfolio.git
+cd portfolio
 
 # Install dependencies
 npm install
