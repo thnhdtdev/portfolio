@@ -10,6 +10,8 @@ import { Textarea } from "@/components/ui/textarea.jsx";
 const ContactForm = () => {
 	const methods = useForm();
 	const formRef = useRef();
+	const values = methods.watch();
+	const isFormFilled = values.name && values.email && values.subject && values.message;
 
 	const onSubmit = async () => {
 		try {
@@ -66,8 +68,9 @@ const ContactForm = () => {
 				</div>
 				<div className="mt-4 flex justify-end gap-4">
 					<Button
-						variant="secondary"
 						size="lg"
+						variant="secondary"
+						disabled={!isFormFilled}
 						className="bg-blue-500 text-white rounded-3xl transition-all duration-200 hover:bg-blue-600 hover:shadow-lg capitalize"
 					>
 						Submit
