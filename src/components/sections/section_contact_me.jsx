@@ -32,13 +32,13 @@ const ContactList = [
 	{
 		icon: <MdOutlineLocationOn className="text-blue-700 w-6 h-6" />,
 		label: "location",
-		value: "Go Vap, HCM City, Vietnam"
+		value: "Go Vap, HCM City, VietNam"
 	}
 ];
 
-const ContactMe = () => {
+const ContactMe = ({ id }) => {
 	return (
-		<div className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-16">
+		<div id={id} className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-16">
 			<FadeInSection>
 				<div className="mb-12 text-3xl font-bold flex gap-2">
 					<div className="underline decoration-blue-700">Contact</div>

@@ -4,9 +4,9 @@ import ExperienceCard from "@/components/elements/experience_card.jsx";
 import Information from "@/components/elements/information.jsx";
 import FadeInSection from "@/components/elements/fade_in_section.jsx";
 
-const AboutSection = () => {
+const AboutSection = ({ id }) => {
 	return (
-		<div className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-8">
+		<div id={id} className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-8">
 			<FadeInSection>
 				<div className="mb-12 text-3xl font-bold flex gap-2">
 					<div className="underline decoration-blue-700">About</div>

@@ -1,9 +1,9 @@
 import Skills from "@/const/skills.jsx";
 import FadeInSection from "@/components/elements/fade_in_section.jsx";
 
-const SkillsSection = () => {
+const SkillsSection = ({ id }) => {
 	return (
-		<div className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-8">
+		<div id={id} className="bg-gray-950 w-full px-8 md:px-40 lg:px-80 py-8">
 			<FadeInSection>
 				<div className="mb-12 text-3xl font-bold flex">
 					<div className="underline decoration-blue-700">Skills</div>

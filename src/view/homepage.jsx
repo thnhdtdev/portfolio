@@ -12,7 +12,7 @@ const HomePage = () => {
 	return (
 		<div>
 			<div className="relative w-full h-screen bg-[#020817] flex justify-center items-center">
-				<div className="absolute inset-0 z-0">
+				<div id="home" className="absolute inset-0 z-0">
 					<Squares
 						speed={0.25}
 						squareSize={40}
@@ -160,18 +160,18 @@ const HomePage = () => {
 			</div>
 
 			{/*About me*/}
-			<AboutSection />
+			<AboutSection id="about" />
 
-			<ProjectSection />
+			<ProjectSection id="projects" />
 
-			<SkillsSection />
+			<SkillsSection id="skills" />
 
 			{/*Logo Loop*/}
 			<div className="bg-gray-950">
 				<SectionLogoLoop />
 			</div>
 
-			<ContactMe />
+			<ContactMe id="contact" />
 		</div>
 	);
 };

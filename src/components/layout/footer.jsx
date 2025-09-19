@@ -9,7 +9,7 @@ const Footer = () => {
 						thanhdat
 					</h1>
 					<p className="max-w-md text-sm text-gray-300">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+						Building elegant solutions to complex problems with modern technologies.
 					</p>
 				</div>
 
