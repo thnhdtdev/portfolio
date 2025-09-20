@@ -11,18 +11,17 @@ import ContactMe from "@/components/sections/section_contact_me.jsx";
 const HomePage = () => {
 	return (
 		<div>
-			<div className="relative w-full h-screen bg-[#020817] flex justify-center items-center">
+			<div className="relative w-full h-screen bg-[#020817] flex justify-center items-center overflow-x-hidden">
 				<div id="home" className="absolute inset-0 z-0">
 					<Squares
 						speed={0.25}
 						squareSize={40}
-						direction="diagonal" // up, down, left, right, diagonal
+						direction="diagonal"
 						borderColor="#271E37"
 						hoverFillColor="#222222"
 					/>
 				</div>
-
-				<div className="relative z-10 w-full max-w-6xl px-8">
+				<div className="relative z-10 w-full max-w-6xl px-4 sm:px-8">
 					<div className="grid grid-cols-1 md:grid-cols-2 items-center">
 						<AnimatedContent
 							distance={150}
@@ -37,18 +36,20 @@ const HomePage = () => {
 							delay={0.3}
 						>
 							<div className="flex flex-col justify-center items-start gap-4">
-								<div className="text-blue-400 text-2xl font-semibold ">Hi! I'm</div>
-								<div className="text-5xl font-bold uppercase underline">
+								<div className="text-blue-400 text-xl sm:text-2xl font-semibold">
+									Hi! I'm
+								</div>
+								<div className="text-4xl sm:text-5xl font-bold uppercase underline">
 									thanhdat
 								</div>
-								<div className="text-xl md:text-2xl text-white font-light mt-2">
+								<div className="text-lg sm:text-xl md:text-2xl text-white font-light mt-2">
 									Frontend Developer & Software Engineering
 								</div>
-								<div className="text-white mt-2">
+								<div className="text-white mt-2 text-base sm:text-lg">
 									Building elegant solutions to complex problems with modern
 									technologies.
 								</div>
-								<div className="flex items-center gap-4 mt-8">
+								<div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-8">
 									<Button
 										variant="secondary"
 										size="lg"
@@ -89,7 +90,7 @@ const HomePage = () => {
 							delay={0.3}
 						>
 							<div className="flex justify-center items-center w-full h-full hover:rotate-3 hover:-translate-y-4 transition-transform duration-500">
-								<div className="border border-white rounded-3xl w-full h-full max-w-xs bg-gray-950 p-6">
+								<div className="border border-white rounded-3xl w-full h-full max-w-xs sm:max-w-sm md:max-w-md bg-gray-950 p-4 sm:p-6">
 									<div className="flex justify-between items-center mb-4">
 										<div className="flex gap-2">
 											<div className="w-3 h-3 bg-red-500 rounded-full" />
@@ -126,7 +127,6 @@ const HomePage = () => {
 												<span className="text-orange-400">]</span>,
 												<br />
 											</div>
-
 											<div>
 												&nbsp;&nbsp;&nbsp;&nbsp;
 												<span>framework:</span>&nbsp;
@@ -148,7 +148,6 @@ const HomePage = () => {
 												<span>learing:</span>&nbsp;
 												<span className="text-green-400">'Always'</span>
 											</div>
-
 											<span className="text-orange-400">&#125;</span>
 										</div>
 									</div>
@@ -159,14 +158,12 @@ const HomePage = () => {
 				</div>
 			</div>
 
-			{/*About me*/}
 			<AboutSection id="about" />
 
 			<ProjectSection id="projects" />
 
 			<SkillsSection id="skills" />
 
-			{/*Logo Loop*/}
 			<div className="bg-gray-950">
 				<SectionLogoLoop />
 			</div>
