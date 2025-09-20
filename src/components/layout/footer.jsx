@@ -2,35 +2,34 @@ import Socials from "@/const/socials.jsx";
 
 const Footer = () => {
 	return (
-		<div className="px-4 md:px-20 lg:px-80 py-20 h-44 bg-gray-950">
-			<div className="flex flex-col md:flex-row justify-between items-center h-full gap-8">
+		<footer className="w-full bg-gray-950 py-10 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-80">
+			<div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
 				<div className="text-center md:text-left">
-					<h1 className="font-bold text-2xl text-blue-500 tracking-wide select-none uppercase">
+					<h1 className="font-bold text-xl sm:text-2xl text-blue-500 tracking-wide select-none uppercase">
 						thanhdat
 					</h1>
-					<p className="max-w-md text-sm text-gray-300">
+					<p className="max-w-md text-sm text-gray-300 mt-2">
 						Building elegant solutions to complex problems with modern technologies.
 					</p>
 				</div>
-
 				<div className="flex flex-col gap-4 md:items-end">
-					<div className="flex items-center gap-6 justify-center">
+					<div className="flex items-center gap-4 sm:gap-6 justify-center">
 						{Socials.map((item) => (
 							<a
 								key={item.label}
 								href={item.url}
-								className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition text-2xl"
+								className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition text-xl sm:text-2xl"
 							>
 								{item.icon}
 							</a>
 						))}
 					</div>
-					<div className="text-xs text-gray-400 text-center md:text-right">
+					<div className="text-xs text-gray-400 text-center md:text-right mt-2">
 						© 2025 thnhdtdev | Built with React & Tailwind
 					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 };
 
