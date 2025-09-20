@@ -55,24 +55,30 @@ const HomePage = () => {
 										size="lg"
 										className="bg-blue-500 text-white rounded-3xl transition-all duration-200 hover:bg-blue-600 hover:shadow-lg capitalize"
 									>
-										Contacts me
+										<a href="#contact" className="hover:text-blue-500">
+											Contacts me
+										</a>
 									</Button>
 									<Button
 										variant="ghost"
 										size="lg"
 										className="border border-white rounded-3xl text-white"
 									>
-										View Projects
-									</Button>
-									{Socials.map((item) => (
-										<a
-											key={item.label}
-											href={item.url}
-											className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition text-2xl"
-										>
-											{item.icon}
+										<a href="#projects" className="hover:text-blue-500">
+											View Projects
 										</a>
-									))}
+									</Button>
+									<div className="flex items-center justify-center gap-4 my-2 sm:mt-0">
+										{Socials.map((item) => (
+											<a
+												key={item.label}
+												href={item.url}
+												className="hover:text-blue-500 hover:scale-125 hover:rotate-6 transition text-2xl"
+											>
+												{item.icon}
+											</a>
+										))}
+									</div>
 								</div>
 							</div>
 						</AnimatedContent>
