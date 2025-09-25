@@ -1,6 +1,6 @@
+import { card_info } from "@/const/card_info.jsx";
 import BioCard from "@/components/elements/bio_card.jsx";
-import EducationCard from "@/components/elements/education_card.jsx";
-import ExperienceCard from "@/components/elements/experience_card.jsx";
+import InfoCard from "@/components/elements/cardInfo.jsx";
 import Information from "@/components/elements/information.jsx";
 import FadeInSection from "@/components/elements/fade_in_section.jsx";
 
@@ -18,13 +18,12 @@ const AboutSection = ({ id }) => {
 					<FadeInSection delay={0.15}>
 						<BioCard />
 					</FadeInSection>
-					<div className="flex gap-4 mt-4">
-						<FadeInSection delay={0.25}>
-							<EducationCard />
-						</FadeInSection>
-						<FadeInSection delay={0.35}>
-							<ExperienceCard />
-						</FadeInSection>
+					<div className="flex gap-4 mt-4 items-stretch">
+						{card_info.map((item, idx) => (
+							<FadeInSection key={item.id} delay={0.25 + idx * 0.1}>
+								<InfoCard {...item} />
+							</FadeInSection>
+						))}
 					</div>
 				</div>
 				<FadeInSection delay={0.45}>
