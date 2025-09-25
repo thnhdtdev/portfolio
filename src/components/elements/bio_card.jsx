@@ -1,5 +1,3 @@
-import { IoDocumentText } from "react-icons/io5";
-
 const BioCard = () => {
 	return (
 		<div className="flex flex-col gap-4 mb-4">
