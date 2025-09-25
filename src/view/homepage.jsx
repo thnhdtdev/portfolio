@@ -35,7 +35,7 @@ const HomePage = () => {
 							threshold={0.2}
 							delay={0.3}
 						>
-							<div className="flex flex-col justify-center items-start gap-4">
+							<div className="lg:mt-0 py-16 flex flex-col justify-center items-start gap-4">
 								<div className="text-blue-400 text-xl sm:text-2xl font-semibold">
 									Hi! I'm
 								</div>
@@ -49,7 +49,7 @@ const HomePage = () => {
 									Building elegant solutions to complex problems with modern
 									technologies.
 								</div>
-								<div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-8">
+								<div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-8 sm:mt-10 justify-center sm:justify-start">
 									<Button
 										variant="secondary"
 										size="lg"

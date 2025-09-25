@@ -14,7 +14,7 @@ const Information = () => {
 			/>
 			<div className="flex flex-col items-center">
 				<div className="text-2xl font-bold">Vo Thanh Dat</div>
-				<div className="text-muted-foreground">
+				<div className="text-muted-foreground flex gap-2 text-center">
 					Frontend Developer & Software Engineering
 				</div>
 			</div>

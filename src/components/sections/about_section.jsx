@@ -18,7 +18,7 @@ const AboutSection = ({ id }) => {
 					<FadeInSection delay={0.15}>
 						<BioCard />
 					</FadeInSection>
-					<div className="flex gap-4 mt-4 items-stretch">
+					<div className="flex flex-col gap-4 mt-4 items-stretch lg:flex-row">
 						{card_info.map((item, idx) => (
 							<FadeInSection key={item.id} delay={0.25 + idx * 0.1}>
 								<InfoCard {...item} />
