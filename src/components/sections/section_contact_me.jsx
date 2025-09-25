@@ -55,7 +55,7 @@ const ContactMe = ({ id }) => {
 					</FadeInSection>
 
 					<FadeInSection delay={0.25} className="my-3">
-						<div className="grid grid-cols-3 gap-4 justify-between">
+						<div className="grid gap-8 grid-cols-1 md:grid-cols-3">
 							<div>
 								<h2 className="font-semibold">Contact Information</h2>
 								<div className="text-muted-foreground">
@@ -68,7 +68,6 @@ const ContactMe = ({ id }) => {
 										))}
 									</div>
 								</div>
-
 								<div>
 									<div className="font-semibold capitalize mt-6">
 										Connect with me
@@ -85,9 +84,8 @@ const ContactMe = ({ id }) => {
 										))}
 									</div>
 								</div>
-								<div></div>
 							</div>
-							<div className="col-span-2">
+							<div className="col-span-1 md:col-span-2">
 								<ContactForm />
 							</div>
 						</div>
